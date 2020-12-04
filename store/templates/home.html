@@ -1,8 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
 
 <title>{% block title %}Home{% endblock title %}</title>
 
 
 {% block content %}
-<h1>Home Page</h1>
+<div class="container-fluid">
+    <div class="row">
+        <img style="width: 100%;" class="img-fluid" src="{% static '/img/image.jpg' %}" alt="">
+    </div>
+</div>
 {% endblock content %}
